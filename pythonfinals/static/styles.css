@@ -1,3 +1,35 @@
+/*
+ * Fonts
+*/
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url('ProximaNova-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: ProximaNova-Bold;
+  src: url('ProximaNova-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: ProximaNovaACond-SemiBold;
+  src: url('ProximaNovaACond-SemiBold.ttf'); 
+}
+
+@font-face {
+  font-family: NoeDisplay-Bold;
+  src: url('NoeDisplay-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: NoeDisplay-Medium;
+  src: url('NoeDisplay-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: NoeDisplay-Regular;
+  src: url('NoeDisplay-Regular.ttf'); 
+}
 
 /*
  * Sidebar
@@ -49,6 +81,8 @@
 }
 
 .social-media-text {
+  font-family: ProximaNova-Regular;
+  font-size: 14px;
   color: #131314;
 }
 
@@ -72,6 +106,10 @@
 
 .journals {
   border-bottom: 1px solid #131314;
+}
+
+.journals-list {
+  font-size: 14px!important;
 }
 
 /*
@@ -122,13 +160,12 @@
 
 /*
  * Post Content
-*/
-
+*/ 
 .post-entry {
-    font-size: 18px;;
+    font-size: 18px;
 }
 
-#sendMessageButton {
+#sendMessageButton, .p {
   color: #ffffff;
   background-color: #131314 ;
 }
@@ -149,7 +186,7 @@
 }
 
 /*
- * Footer
+ * Form
 */
 #addForm {
   padding: 8px 40px 8px 40px;

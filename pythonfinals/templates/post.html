@@ -13,37 +13,15 @@
       <a class="btn outline-btn" href="{{ url_for('delete', post_id=post.doc_id)}}" role="button"><span><i class="fa fa-trash pr-1" aria-hidden="true"></i></span>Delete</a>
     </div>
   </div>
- 
-  <!-- Page Header -->
-  <!--
-  <header class="masthead" style="background-image: url('{{ url_for ('static', filename = 'post-bg.jpg') }}')">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="post-heading">
-            <h1>{{post.title}}</h1>
-            <h2 class="subheading">{{post.subtitle}}</h2>
-            <span class="meta">Posted by {{post.author}}
-        
-              on {{post.datetime}}</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  -->
-
 
   <!--Post Title-->
   <div class="container pt-5 pb-5">
     <div class="row">
       <div class="col-lg-9 col-md-10 mx-auto">
         <div class="post-heading">
-          <span class="meta"><p>Posted by {{post.author}} on {{post.datetime}}</p></span>
-          <h1>{{post.title}}</h1>
+          <span class="meta pb-5"><p>By {{post.author}} | {{post.datetime}}</p></span>
+          <h1 class="pt-4">{{post.title}}</h1>
           <h6 class="subheading text-secondary pt-1 font-italic">{{post.subtitle}}</h6>
-          
         </div>
       </div>
     </div>
