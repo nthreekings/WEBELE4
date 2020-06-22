@@ -28,8 +28,9 @@ def about():
 
 @app.route('/post/<int:post_id>')
 def post(post_id):
+    all_post = db.all()
     post = db.get(doc_id= post_id)
-    return render_template('post.html', post= post)
+    return render_template('post.html', post= post, posts = all_post)
 
 @app.route('/add')
 def add():

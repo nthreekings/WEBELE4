@@ -5,25 +5,17 @@
 {% endblock %}
 {% block content %}
 
-  <!-- Page Header 
-  <header class="masthead" style="background-image: url('{{ url_for('static',filename = 'contact-bg.jpg') }}')">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="page-heading">
-            <h1>New Journal</h1>
-            <span class="subheading">Share your thoughts now.</span>
-          </div>
-        </div>
-      </div>
+  <!-- Page Header -->
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom welcome-header">
+    <button type="button" onclick="javascript:history.back()"><span><i class="fa fa-long-arrow-left pr-2" aria-hidden="true"></i></span>Back</button>
+    <div class="btn-group mr-2">
     </div>
-  </header>
--->
+  </div>
+
   <!-- Main Content -->
-  <div class="container pt-5">
+  <div class="container pt-3">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-9 col-md-10 mx-auto">
         <form name="addForm" id="addForm" method= "POST" action="{{url_for('updatepost') }}" novalidate>
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
@@ -33,6 +25,7 @@
               <p class="help-block text-danger"></p>
             </div>
           </div>
+
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Subtitle</label>
@@ -40,6 +33,7 @@
               <p class="help-block text-danger"></p>
             </div>
           </div>
+
           <div class="control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Author</label>
@@ -47,6 +41,7 @@
               <p class="help-block text-danger"></p>
             </div>
           </div>
+
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Entry</label>
@@ -57,6 +52,7 @@
               <p class="help-block text-danger"></p>
             </div>
           </div>
+          
           <br>
           <div id="success"></div>
           <div class="form-group">
