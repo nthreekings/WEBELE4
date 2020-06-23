@@ -86,11 +86,12 @@ h6 {
 }
 
 p {
-	font-family: ProximaNova-Regular;
-	font-size: 16px;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 18px;
 	line-height: 1.7;
 	color: #131314;
-	margin: 0px;
+  margin: 0px;
+  letter-spacing: 0.2px;
 }
 
 ul, li {
@@ -100,7 +101,8 @@ ul, li {
 
 ol {
   padding: 0px 40px 0px 40px;
-  font-size: 16px;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 label {
