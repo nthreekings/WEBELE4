@@ -110,6 +110,7 @@
 
 .journals-list {
   font-size: 14px!important;
+  font-family: ProximaNova-Regular;
 }
 
 /*
@@ -154,7 +155,14 @@
 }
 
 .journal-author {
+  font-size: 16px;
+  font-family: ProximaNova-Regular;
   color: #131314!important;
+}
+
+.journal-datetime {
+  font-size: 16px;
+  font-family: ProximaNova-Regular;
 }
 
 
@@ -205,5 +213,9 @@
 .footer-style {
     border-top: 1px solid #131314!important;
     background-color: #F8F8F8;
+}
+
+.copyright {
+  font-family: ProximaNova-Regular;
 }
 
