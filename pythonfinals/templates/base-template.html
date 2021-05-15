@@ -4,10 +4,10 @@
         {% block head %}
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
+
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.ico') }}"/>
-        
+
         <!-- Bootstrap core CSS -->
         <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
 
@@ -43,7 +43,7 @@
                             <span><i class="fa fa-bars " aria-hidden="true"></i>
                             </span>
                         </button>
-                    </div>   
+                    </div>
                 </div>
             </header>
         </nav>
@@ -85,16 +85,16 @@
                                         <span class="p-2"><i class="fa fa-twitter" aria-hidden="true"></i></span>
                                     </a>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </div>
                 </nav>
-                
+
                 <!-- Main Content -->
                 <main role="main" class="col-md-9 ml-sm-auto m-lg-auto col-lg-8 px-md-4">
                     {% block content %}
-                    {% endblock %}         
+                    {% endblock %}
                 </main>
 
                 <!-- Right Sidebar -->
@@ -116,7 +116,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Footer -->
         <footer>
             <div class="container-fluid">
@@ -138,6 +138,6 @@
 
         <!-- Custom scripts for this template -->
         <script src="{{ url_for('static', filename= 'clean-blog.min.js') }}"></script>
-          
+
     </body>
 </html>
